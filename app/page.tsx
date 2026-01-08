@@ -2,7 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { HeroCarousel } from "@/components/hero-carousel"
 import { ArtistCard } from "@/components/artist-card"
-import { NewsCard } from "@/components/news-card"
+import { NewsCard, type NewsCardProps } from "@/components/news-card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -101,7 +101,7 @@ const featuredArtists = [
   },
 ]
 
-const newsItems = [
+const newsItems: NewsCardProps[] = [
   {
     id: "1",
     category: "notice",
